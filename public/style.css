@@ -1,0 +1,53 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container h1 {
+  text-align: center;
+}
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#game .row {
+  display: flex;
+}
+#game .row input {
+  display: block;
+  border: 2px solid #d3d6da;
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 2px;
+  caret-color: transparent;
+  cursor: pointer;
+}
+#game .row input:hover {
+  background: #538d4e;
+  border: 2px solid #538d4e;
+}
+#game .row input:focus {
+  outline: none;
+  border: 2px solid #538d4e;
+}
+#game .row input:disabled {
+  background: #d3d6da;
+}
+#game .row input:disabled.close {
+  background-color: yellow;
+  border: 2px solid #ffffff;
+}
+#game .row input:disabled.correct {
+  background-color: #538d4e;
+  border: 2px solid #ffffff;
+}
